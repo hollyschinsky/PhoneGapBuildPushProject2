@@ -49,7 +49,7 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var pushNotification = window.plugins.pushNotification;
-        console.log("PN " + pushNotification);
+        // TODO: Enter your own GCM Sender ID in the register call for Android
         if (device.platform == 'android' || device.platform == 'Android') {
             pushNotification.register(successHandler, errorHandler,{"senderID":"834841663931","ecb":"onNotificationGCM"});
         }
