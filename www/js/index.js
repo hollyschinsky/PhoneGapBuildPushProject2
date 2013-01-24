@@ -51,7 +51,7 @@ var app = {
         var pushNotification = window.plugins.pushNotification;
         console.log("PN " + pushNotification);
         if (device.platform == 'android' || device.platform == 'Android') {
-            pushNotification.register(successHandler, errorHandler,{"senderID":"824841663931","ecb":"onNotificationGCM"});
+            pushNotification.register(successHandler, errorHandler,{"senderID":"834841663931","ecb":"onNotificationGCM"});
         }
         else {
             pushNotification.register(this.tokenHandler,this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
